@@ -1,0 +1,56 @@
+{
+  "_doc_1_anh_bia": "mockup_image TRỎ VÀO .webp, đừng trỏ .png. Ảnh PNG từ công cụ tạo ảnh thường 2-3 MB; WebP q92 xuống ~300 KB mà mắt thường không phân biệt. Dùng scripts/render-bia-hero.ps1 để nén + nới đáy ảnh.",
+  "_doc_2_noi_day_anh": "Template đặt nút TẢI NGAY cách đáy ảnh 26px, cao 56px. Ảnh bìa nào có chữ sát đáy (tên tác giả, tagline) thì PHẢI nới thêm ~240px nền ở đáy, không thì nút đè mất chữ.",
+  "_doc_3_ribbon": "ribbon_text tối đa ~17 ký tự ở cỡ chữ 26px. Dài hơn là bị hai đầu chữ V của dải ruy băng khoét mất.",
+  "_doc_4_khan_hiem": "show_countdown và show_toast mặc định true = giữ nguyên design gốc. Đặt false để tắt. ĐỌC references/BAY-DA-DINH.md mục 10 trước khi quyết định bật.",
+
+  "slug": "ten-ebook-khong-dau",
+  "title": "Tên ebook — câu hứa chính",
+  "description": "Một câu nói rõ khách nhận được gì. Câu này hiện khi chia sẻ link lên Facebook/Zalo.",
+  "mockup_image": "D:/du-an/bia/bia-hero.webp",
+  "favicon": "",
+
+  "audience_headline": "Dành cho <b>[đối tượng]</b> biết [X] quan trọng nhưng <b>chưa biết bắt đầu từ đâu</b> — [hiện trạng], và muốn <b>[lời hứa hai vế]</b>.",
+
+  "pains": [
+    "Nỗi đau 1 — lấy từ nhóm đau CỦA CHÍNH NGƯỜI TRẢ TIỀN, không phải đau của doanh nghiệp.",
+    "Nỗi đau 2 — hậu quả cụ thể, không nói chung chung.",
+    "Nỗi đau 3 — vì sao lần trước họ thử mà thất bại.",
+    "Nỗi đau 4 — nỗi sợ + rào cản tiền bạc đi cùng nhau.",
+    "Câu chốt theo khuôn phủ định kép: Bạn không thiếu <b>X</b>. Thứ bạn thiếu là <b>Y</b>."
+  ],
+
+  "helper_text": "LỜI HỨA HAI VẾ VIẾT HOA",
+  "ribbon_text": "QUÀ TẶNG ĐẶC BIỆT",
+  "gift_text": "NHẬN [TÊN QUÀ]",
+  "float_cta": "TẢI NGAY",
+  "button_text": "GỬI TÔI [TÊN QUÀ CỤ THỂ]",
+  "placeholders": { "name": "Họ và tên", "phone": "Số điện thoại", "email": "Email" },
+
+  "show_countdown": false,
+  "show_toast": false,
+  "toast_names": [],
+  "countdown_minutes": 720,
+
+  "brand_name": "Tên bạn — Định vị một câu",
+  "contact": {
+    "address": "Địa chỉ (bỏ trống nếu không muốn hiện)",
+    "hotline": "Số điện thoại (bỏ trống nếu không muốn hiện)",
+    "email": "Email (bỏ trống nếu không muốn hiện)"
+  },
+  "cta_bar": { "button1": "TẢI EBOOK", "button2": "TẢI NGAY" },
+
+  "popup": {
+    "title": "Cảm ơn anh/chị!",
+    "message": "Thông tin đã được ghi nhận. [Tên quà] sẽ được gửi tới email của anh/chị trong ít phút.",
+    "button": "Đóng"
+  },
+
+  "_doc_5_endpoint": "form_endpoint = /api/lead khi dùng Cloudflare Pages Function (functions/api/lead.js). ĐỂ TRỐNG LÀ MẤT SẠCH LEAD mà popup cảm ơn vẫn hiện bình thường — không ai biết.",
+  "form_endpoint": "/api/lead",
+  "success_redirect": "",
+  "conversion_value": 10000,
+  "fb_pixel": "",
+  "ga4": "",
+  "tiktok_pixel": ""
+}
